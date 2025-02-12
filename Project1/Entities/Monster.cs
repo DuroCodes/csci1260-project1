@@ -2,7 +2,7 @@ namespace Project1.Entities;
 
 public class Monster(int x, int y) : ICharacter
 {
-    public string Name { get; set; } = "Monster";
+    public string Name => "Monster";
     public int Health { get; set; } = 100;
     public int Damage { get; set; } = 10;
     public int X { get; } = x;

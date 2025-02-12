@@ -7,7 +7,6 @@ public class Weapon(int x, int y, int damage)
 
     public new void Interact(Player player)
     {
-        player.Inventory.Add(this);
         player.Damage = Math.Max(player.Damage, Damage);
         if (player.Damage == Damage) player.LogMessages.Add($"{Name} equips {Name}!");
     }
