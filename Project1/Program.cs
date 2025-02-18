@@ -19,10 +19,10 @@ while (true)
 
     var (dx, dy) = key switch
     {
-        ConsoleKey.W => (0, -1),
-        ConsoleKey.A => (-1, 0),
-        ConsoleKey.S => (0, 1),
-        ConsoleKey.D => (1, 0),
+        ConsoleKey.W or ConsoleKey.UpArrow => (0, -1),
+        ConsoleKey.A or ConsoleKey.LeftArrow => (-1, 0),
+        ConsoleKey.S or ConsoleKey.DownArrow => (0, 1),
+        ConsoleKey.D or ConsoleKey.RightArrow => (1, 0),
         _ => (0, 0)
     };
 
